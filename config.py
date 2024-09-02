@@ -1,0 +1,30 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_KEY = os.getenv("OKX_API_KEY")
+SECRET_KEY = os.getenv("OKX_SECRET_KEY")
+PASSPHRASE = os.getenv("OKX_PASSPHRASE")
+
+SYMBOL = "BTC/USDT"
+TIMEFRAME = "1m"
+# 每秒价格变化阈值
+PRICE_CHANGE_1S_THRESHOLD = 0.0001  # 0.01%
+# 3秒价格变化阈值
+PRICE_CHANGE_3S_THRESHOLD = 0.0003  # 0.03%
+# 5秒价格变化阈值
+PRICE_CHANGE_5S_THRESHOLD = 0.0004  # 0.04%
+# 10秒价格变化阈值
+PRICE_CHANGE_10S_THRESHOLD = 0.0006  # 0.06%
+# 30秒价格变化阈值
+PRICE_CHANGE_30S_THRESHOLD = 0.0008  # 0.08%
+# 1分钟价格变化阈值
+PRICE_CHANGE_1M_THRESHOLD = 0.001  # 0.1%
+
+
+STOP_LOSS_THRESHOLD = 0.002  # 0.2%
+
+TRADE_AMOUNT = 1  # USDT
+
+TEST = True
